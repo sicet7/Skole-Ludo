@@ -1,0 +1,7 @@
+D:\Dropbox\Dev\C#\Skole\Projects\ITD.OOP\Ludo\bin\Debug\Ludo.exe.config
+D:\Dropbox\Dev\C#\Skole\Projects\ITD.OOP\Ludo\bin\Debug\Ludo.exe
+D:\Dropbox\Dev\C#\Skole\Projects\ITD.OOP\Ludo\bin\Debug\Ludo.pdb
+D:\Dropbox\Dev\C#\Skole\Projects\ITD.OOP\Ludo\obj\Debug\Ludo.csprojResolveAssemblyReference.cache
+D:\Dropbox\Dev\C#\Skole\Projects\ITD.OOP\Ludo\obj\Debug\Ludo.exe
+D:\Dropbox\Dev\C#\Skole\Projects\ITD.OOP\Ludo\obj\Debug\Ludo.pdb
+D:\Dropbox\Dev\C#\Skole\Projects\ITD.OOP\Ludo\bin\Debug\Assets\Board.txt
