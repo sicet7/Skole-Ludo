@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Ludo.CE {
-	class Menu : IRunnable {
+    class Menu : IActivatable {
 
 		private ConsoleManager console;
 
@@ -13,7 +13,7 @@ namespace Ludo.CE {
 			this.console = new ConsoleManager();
 		}
 
-		public void Run() {
+		public void Activate() {
 
 			this.console.MaxLineLength = Console.WindowWidth - 1;
 			this.console.MaxLineAmount = Console.WindowHeight - 1;

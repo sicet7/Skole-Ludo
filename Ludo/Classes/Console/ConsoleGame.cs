@@ -32,7 +32,7 @@ namespace Ludo.CE {
 			do {
 
 				if(this.first) {
-					this.menu.Run();
+                    this.menu.Activate();
 				} else {
 					this.console.MaxLineAmount = Console.WindowHeight - 1;
 					this.console.MaxLineLength = Console.WindowWidth - 1;
