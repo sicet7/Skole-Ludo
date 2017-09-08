@@ -25,7 +25,7 @@ namespace Ludo {
 					Program.game=new WFE.WindowsFormGame();
 
 				if(input=='2')
-					Program.game=new CE.ConsoleGameEntry();
+					Program.game=new CE.ConsoleGame();
 
 
 				if(input=='3')
@@ -34,7 +34,7 @@ namespace Ludo {
 			} while(game == null);
 
 
-			Program.game.Run();
+            Program.game.Activate();
 			if(!Program.game.GameActive) {
 				Program.game.CleanUp();
 			}

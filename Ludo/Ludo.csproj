@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -43,9 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Console\Board.cs" />
-    <Compile Include="Classes\Console\ConsoleGameEntry.cs" />
+    <Compile Include="Classes\Console\ConsoleGame.cs" />
     <Compile Include="Classes\Console\ConsoleManager.cs" />
-    <Compile Include="Classes\Console\Game.cs" />
     <Compile Include="Classes\Console\LineModification.cs" />
     <Compile Include="Classes\Console\Menu.cs" />
     <Compile Include="Classes\Extensions.cs" />
@@ -53,7 +52,7 @@
     <Compile Include="Classes\Position.cs" />
     <Compile Include="Interfaces\IGame.cs" />
     <Compile Include="Interfaces\IPlayer.cs" />
-    <Compile Include="Interfaces\IRunnable.cs" />
+    <Compile Include="Interfaces\IActivatable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\WinForm\WindowsFormGame.cs" />

@@ -4,10 +4,10 @@ using System.IO;
 using System.Text;
 
 namespace Ludo.CE {
-	class ConsoleGameEntry : IGame {
+	class ConsoleGame : IGame {
 
 		private bool running = true;
-		public bool first = true;
+        public bool first = true;
 
 		public bool GameActive {
 			get => this.running;
@@ -15,25 +15,29 @@ namespace Ludo.CE {
 
 		
 		private Menu menu;
-		private Game game;
+		private ConsoleManager console;
 
-		public ConsoleGameEntry() {
+		public ConsoleGame() {
 			this.menu = new Menu();
-			this.game = new Game();
+			this.console = new ConsoleManager(new Board());
+			this.console.CurrentPosition = new Position(0, 0, true);
 		}
 
 		public void CleanUp() {
 			throw new NotImplementedException();
 		}
 
-		public void Run() {
+		public void Activate() {
 
 			do {
 
 				if(this.first) {
 					this.menu.Run();
 				} else {
-					this.game.Run();
+					this.console.MaxLineAmount = Console.WindowHeight - 1;
+					this.console.MaxLineLength = Console.WindowWidth - 1;
+
+					this.console.Display();
 				}
 
 			} while(this.running);

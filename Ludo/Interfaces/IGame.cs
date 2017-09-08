@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Ludo {
-	internal interface IGame : IRunnable {
+	internal interface IGame : IActivatable {
 
 		bool GameActive { get; }//Returns true ít main loop has been broken.
 

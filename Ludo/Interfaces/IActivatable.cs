@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Ludo {
-	interface IRunnable {
+	interface IActivatable {
 
-		void Run();
+		void Activate();
 
 	}
 }
