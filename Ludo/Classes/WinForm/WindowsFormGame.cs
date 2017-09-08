@@ -12,7 +12,7 @@ namespace Ludo.WFE {
 			throw new NotImplementedException();
 		}
 
-		public void Run() {
+		public void Activate() {
 			throw new NotImplementedException();
 		}
 	}
